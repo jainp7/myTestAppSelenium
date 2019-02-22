@@ -12,7 +12,7 @@ public class StepDefination {
   WebDriver driver;
 @Given("^Open Chrome and start the web application$")
 public void open_Chrome_and_start_the_application() throws Throwable {
-	 System.setProperty("webdriver.chrome.driver","C:\\chromedriver.exe");
+	 System.setProperty("webdriver.chrome.driver","C:\\chromedriver_win32auto\\chromedriver.exe");
 	   driver=new ChromeDriver();
 	   driver.get("http://localhost:9012/mytestapp/login.htm");
 	   driver.manage().window().maximize();
